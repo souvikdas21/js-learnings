@@ -32,3 +32,28 @@ console.log(typeof hero) //object
 console.log(typeof myObj) //object
 console.log(typeof myFunction) //function
 
+//.................Memory...................
+
+// Stack(Primitive),Heap(Non-Primitive)
+
+//Primitive
+
+let myYoutubeName = "Diggie"
+let anotherName = myYoutubeName
+anotherName = "Das"
+
+console.log(anotherName) //Das
+console.log(myYoutubeName) //Diggie
+
+//Non primitive
+
+let user = {
+    email : "user@gmail.com",
+    upi : "user1@ybl"
+}
+
+let user1 = user
+
+user1.email = "simon@gmail.com"
+console.log(user1.email)
+console.log(user.email)
