@@ -28,3 +28,35 @@ console.log(Object.keys(obj3))
 console.log(Object.values(obj3))
 console.log(Object.entries(obj3))
 console.log(obj3.hasOwnProperty('2'))
+
+const course = {
+    coursename: "Js so easy",
+    price: "999",
+    courseInstructor: "Shiva"
+}
+
+console.log(course.courseInstructor)
+
+const{courseInstructor : instructor} = course //destructure of object
+
+console.log(instructor)
+
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "Souvik")
+
+//API format
+
+// {
+//     "name": "Souvik",
+//     "courseName": "JS too easy",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+// ]
